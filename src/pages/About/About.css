@@ -1,0 +1,103 @@
+.about-page {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 15vh auto;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 60px;
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    padding: 60px 20px;
+    color: white;
+    border-radius: 15px;
+  }
+  
+  .about-header h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .about-header p {
+    font-size: 20px;
+    opacity: 0.9;
+  }
+  
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .about-story, .about-mission {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-story h2, .about-mission h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .about-story p, .about-mission p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  .values-container {
+    margin-top: 40px;
+  }
+  
+  .values-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .value-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .value-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .value-card h3 {
+    color: #3498db;
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+  
+  .value-card p {
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .about-header h1 {
+      font-size: 36px;
+    }
+    
+    .about-header p {
+      font-size: 18px;
+    }
+    
+    .values-grid {
+      grid-template-columns: 1fr;
+    }
+  }

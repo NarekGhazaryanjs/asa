@@ -1,5 +1,7 @@
+import TeamPage from "./TeamPage"
+
 function Team(){
-    return <h1>Team</h1>
+    return <TeamPage />
 }
 
 export default Team

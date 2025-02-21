@@ -1,0 +1,53 @@
+.team-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    transition: transform 0.3s ease;
+    width: 300px;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .image-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #3498db;
+    margin-bottom: 15px;
+  }
+  
+  .member-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .member-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 10px 0;
+  }
+  
+  .member-role {
+    font-size: 18px;
+    color: #3498db;
+    margin-bottom: 10px;
+  }
+  
+  .member-bio {
+    color: #7f8c8d;
+    line-height: 1.5;
+  }
