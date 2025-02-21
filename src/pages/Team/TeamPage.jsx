@@ -7,43 +7,43 @@ const TeamPage = () => {
         {
             name: "Նարեկ Ղազարյան",
             role: "Senior Front-end Developer",
-            image: "/teamImages/narek.jpg", // Փոխարինեք իրական նկարի հղումով
+            image: "/teamImages/narek.jpg", 
             bio: "N2G BRAINS ընկերության հիմնադիր տնօրեն"
         },
         {
             name: "Տաթև Հախվերդյան",
             role: "UI/UX Designer",
-            image: "/teamImages/narek.jpg", // Փոխարինեք իրական նկարի հղումով
+            image: "/teamImages/narek.jpg",
             bio: "Creative մտածելակերպով դիզայներ Figma-ի փորձառությամբ"
         },
         {
             name: "Լիլիթ Պողոսյան",
             role: "Back-end Developer",
-            image: "/teamImages/narek.jpg", // Փոխարինեք իրական նկարի հղումով
+            image: "/teamImages/narek.jpg", 
             bio: "Node.js և Python փորձառու մասնագետ"
         },
         {
             name: "Նարեկ Ղազարյան",
             role: "Senior Front-end Developer",
-            image: "/teamImages/narek.jpg", // Փոխարինեք իրական նկարի հղումով
+            image: "/teamImages/narek.jpg", 
             bio: "N2G BRAINS ընկերության հիմնադիր տնօրեն"
         },
         {
             name: "Նարեկ Ղազարյան",
             role: "Senior Front-end Developer",
-            image: "/teamImages/narek.jpg", // Փոխարինեք իրական նկարի հղումով
+            image: "/teamImages/narek.jpg", 
             bio: "N2G BRAINS ընկերության հիմնադիր տնօրեն"
         },
         {
             name: "Նարեկ Ղազարյան",
             role: "Senior Front-end Developer",
-            image: "/teamImages/narek.jpg", // Փոխարինեք իրական նկարի հղումով
+            image: "/teamImages/narek.jpg", 
             bio: "N2G BRAINS ընկերության հիմնադիր տնօրեն"
         },
         {
             name: "Նարեկ Ղազարյան",
             role: "Senior Front-end Developer",
-            image: "/teamImages/narek.jpg", // Փոխարինեք իրական նկարի հղումով
+            image: "/teamImages/narek.jpg", 
             bio: "N2G BRAINS ընկերության հիմնադիր տնօրեն"
         },
     ];

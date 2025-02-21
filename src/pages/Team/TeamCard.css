@@ -1,5 +1,5 @@
 .team-card {
-    background-color: white;
+    background-color: #000000bf;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -37,17 +37,17 @@
   .member-name {
     font-size: 24px;
     font-weight: bold;
-    color: #2c3e50;
+    color: white;
     margin: 10px 0;
   }
   
   .member-role {
     font-size: 18px;
-    color: #3498db;
+    color: white;
     margin-bottom: 10px;
   }
   
   .member-bio {
-    color: #7f8c8d;
+    color: white;
     line-height: 1.5;
   }

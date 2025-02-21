@@ -1,61 +1,60 @@
 import React from 'react';
+import { FaRegLightbulb, FaHandshake, FaRecycle, FaUsers } from 'react-icons/fa';
 import './About.css';
 
-const About = () => {
+const AboutPage = () => {
   return (
     <div className="about-page">
-      <div className="about-header">
-        <h1>Մեր Մասին</h1>
-        <p>Նորարարություն և որակ 2010 թվականից</p>
-      </div>
+      <section className="about-header">
+        <h1>Our Vision</h1>
+        <p>We are committed to revolutionizing the industry with innovative solutions. Join us as we pave the way for a brighter future.</p>
+      </section>
 
       <div className="about-section">
         <div className="about-story">
-          <h2>Մեր Պատմությունը</h2>
-          <p>Մենք սկսել ենք մեր ճանապարհը 2010 թվականին՝ փոքր թիմով և մեծ երազանքներով: Այսօր մենք համագործակցում ենք աշխարհի խոշորագույն ընկերությունների հետ՝ ստեղծելով նորարարական լուծումներ:</p>
+          <h2>Our Story</h2>
+          <p>Founded with the purpose of combining technology with social responsibility, we’ve created a platform to inspire change. Our founders, driven by a shared passion, have united their skills to build something that matters. Together, we aim to break barriers and reshape industries for good.</p>
         </div>
 
         <div className="about-mission">
-          <h2>Մեր Առաքելությունը</h2>
-          <p>Մեր նպատակն է ստեղծել բարձրորակ և նորարարական տեխնոլոգիական լուծումներ, որոնք կօգնեն մեր հաճախորդներին հասնել իրենց նպատակներին:</p>
+          <h2>Our Mission</h2>
+          <p>We aim to create a world where innovation meets impact. Our mission is to build sustainable solutions that enhance lives, foster growth, and drive lasting change. Through our work, we strive to inspire future generations to think creatively and act responsibly.</p>
         </div>
+      </div>
 
-        <div className="values-container">
-          <h2>Մեր Արժեքները</h2>
-          <div className="values-grid">
-            <div className="value-card">
-              <h3>Որակ</h3>
-              <p>Մենք երբեք չենք զիջում որակը և միշտ ձգտում ենք կատարելության</p>
-            </div>
-            <div className="value-card">
-              <h3>Նորարարություն</h3>
-              <p>Մշտապես հետևում ենք նոր տեխնոլոգիաներին և միտումներին</p>
-            </div>
-            <div className="value-card">
-              <h3>Թիմային աշխատանք</h3>
-              <p>Հավատում ենք, որ միասին կարող ենք հասնել ավելի մեծ հաջողությունների</p>
-            </div>
-            <div className="value-card">
-              <h3>Թիմային աշխատանք</h3>
-              <p>Հավատում ենք, որ միասին կարող ենք հասնել ավելի մեծ հաջողությունների</p>
-            </div>
-            <div className="value-card">
-              <h3>Թիմային աշխատանք</h3>
-              <p>Հավատում ենք, որ միասին կարող ենք հասնել ավելի մեծ հաջողությունների</p>
-            </div>
-            <div className="value-card">
-              <h3>Թիմային աշխատանք</h3>
-              <p>Հավատում ենք, որ միասին կարող ենք հասնել ավելի մեծ հաջողությունների</p>
-            </div>
-            <div className="value-card">
-              <h3>Թիմային աշխատանք</h3>
-              <p>Հավատում ենք, որ միասին կարող ենք հասնել ավելի մեծ հաջողությունների</p>
-            </div>
+      <div className="values-container">
+        <h2>Our Core Values</h2>
+        <div className="values-grid">
+          <div className="value-card">
+            <FaRegLightbulb size={40} color="#3498db" />
+            <h3>Innovation</h3>
+            <p>We embrace new ideas and challenges, constantly evolving to create groundbreaking solutions.</p>
+          </div>
+          <div className="value-card">
+            <FaHandshake size={40} color="#3498db" />
+            <h3>Collaboration</h3>
+            <p>We believe in the power of teamwork and partnerships to achieve mutual success and growth.</p>
+          </div>
+          <div className="value-card">
+            <FaRecycle size={40} color="#3498db" />
+            <h3>Sustainability</h3>
+            <p>We prioritize long-term environmental and social impacts in everything we do.</p>
+          </div>
+          <div className="value-card">
+            <FaUsers size={40} color="#3498db" />
+            <h3>Community</h3>
+            <p>We put people first, building strong communities that thrive through cooperation and mutual respect.</p>
           </div>
         </div>
+      </div>
+
+      <div className="contact-container">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to join the movement? Reach out to us and let’s work together for a better future.</p>
+        <button className="contact-button">Get In Touch</button>
       </div>
     </div>
   );
 };
 
-export default About;
+export default AboutPage;
