@@ -1,0 +1,173 @@
+.container {
+  background: #000;
+  color: #fff;
+}
+.team {
+  width: 100%;
+  height: calc(100vh - 100px);
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.team * {
+  transition: 1s;
+}
+.team > h1 {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  position: relative;
+  top: 16%;
+  opacity: 0;
+}
+.team > img {
+  width: 90%;
+  z-index: 3;
+}
+
+.shadow {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 100px;
+  background: linear-gradient(to right, #0319e3, #0319e32a, #0319e3);
+  filter: blur(80px);
+  z-index: 4;
+  opacity: 0;
+}
+
+.team:hover > img {
+  width: 98%;
+}
+.team:hover > h1 {
+  opacity: 1;
+  top: 19%;
+}
+.team:hover > .shadow {
+  height: 150px;
+  opacity: 1;
+}
+
+.infoContainer {
+  width: 100%;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.infoChildContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.textContainer,
+.cards {
+  margin-top: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cards > * {
+  margin-top: 20px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* .subtitle {
+  font-size: 64px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 74px;
+  color: #f6f6f6;
+} */
+.textContainer > p {
+  color: #6d6d6d;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  width: 80%;
+}
+
+.coursesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.coursesContainer > p {
+  width: 70%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #898989;
+}
+.sliderContainer {
+  width: 100%;
+  margin-top: 60px;
+}
+@media screen and (max-width: 1480px) {
+  .subtitle {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  .textContainer > p,
+  .coursesContainer > p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .coursesContainer > button {
+    width: 180px;
+    height: 35px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .container {
+    padding-bottom: 300px;
+  }
+  .textContainer > p {
+    font-size: 18px;
+    line-height: 23px;
+    width: 100%;
+  }
+  .team {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .textContainer h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 74px;
+  }
+  .textContainer p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+  }
+
+  .infoContainer {
+    margin-top: 0px;
+    padding-top: 70px;
+  }
+}

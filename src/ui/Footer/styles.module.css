@@ -1,0 +1,205 @@
+.container {
+  width: 100%;
+  height: 294px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  backdrop-filter: blur(10px);
+  color: #fff;
+}
+
+.container div a {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #898989;
+}
+
+.container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 180px;
+}
+
+.information h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.contacts h2,
+.socInfo h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 27.6px;
+}
+
+.contacts a {
+  display: flex;
+}
+
+.socialContactsContainer {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socialContactsContainer a > img {
+  width: 30px;
+  height: 30px;
+}
+.socialContactsContainer .facebookImg {
+  width: 80px;
+  height: 35px;
+}
+.socialContactsContainer .linkedin {
+  width: 40px;
+  height: 35px;
+}
+
+@media screen and (max-width: 1290px) {
+  .container {
+    height: 270px;
+  }
+
+  .container > div {
+    height: 170px;
+  }
+
+  .information h2,
+  .contacts h2,
+  .socInfo h2 {
+    font-size: 23px;
+  }
+  .container .information > a,
+  .container .contacts > a {
+    font-size: 22px;
+    line-height: 20px;
+  }
+
+  .contacts a img {
+    width: 23px;
+  }
+
+  .socialContactsContainer a > img {
+    width: 40px;
+    height: 30px;
+  }
+  .socialContactsContainer .facebookImg {
+    width: 50px;
+    height: 35px;
+  }
+  .socialContactsContainer .linkedin {
+    width: 40px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    height: 240px;
+  }
+  .container > div {
+    height: 160px;
+  }
+
+  .information h2,
+  .contacts h2,
+  .socInfo h2 {
+    font-size: 18px;
+  }
+  .container .information > a,
+  .container .contacts > a {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .contacts a img {
+    width: 22px;
+    height: 18px;
+  }
+
+  .socialContactsContainer a > img {
+    width: 30px;
+    height: 25px;
+  }
+  .socialContactsContainer .facebookImg {
+    width: 40px;
+    height: 30px;
+  }
+  .socialContactsContainer .linkedin {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .information h2,
+  .contacts h2,
+  .socInfo h2 {
+    font-size: 18px;
+  }
+  .container .information > a,
+  .container .contacts > a {
+    font-size: 16px;
+    line-height: 17px;
+  }
+
+  .contacts a img {
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+    height: 571px;
+    padding-top: 50px;
+    padding-left: 80px;
+  }
+  .information h2,
+  .contacts h2,
+  .socInfo h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+  }
+
+  .container .information > a,
+  .container .contacts > a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .socInfo {
+    width: 250px;
+  }
+
+  .socialContactsContainer {
+    width: 60%;
+  }
+
+  .socialContactsContainer a > img {
+    width: 30px;
+    height: 35px;
+  }
+  .socialContactsContainer .facebookImg {
+    width: 40px;
+    height: 35px;
+  }
+  .socialContactsContainer .linkedin {
+    width: 40px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding-top: 40px;
+    padding-left: 30px;
+  }
+}

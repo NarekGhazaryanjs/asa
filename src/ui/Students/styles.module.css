@@ -1,0 +1,49 @@
+.sliderContainer {
+  width: 85%;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dot {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background: #7c8eff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.slider {
+  width: 85%;
+}
+.image {
+  width: 98%;
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+
+@media screen and (max-width: 1400px) {
+  .dot {
+    width: 35px;
+    height: 35px;
+  }
+  .dot > img {
+    width: 14px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .dot {
+    display: none;
+  }
+  .sliderContainer {
+    width: 100%;
+    justify-content: center;
+  }
+  .image {
+    border-radius: 20px;
+  }
+}

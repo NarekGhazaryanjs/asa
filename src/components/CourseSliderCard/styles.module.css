@@ -1,0 +1,117 @@
+.container {
+  width: 96%;
+  height: 100%;
+  border-radius: 20px;
+  border: 1px solid #8d8b8b;
+  background-size: cover;
+  padding: 33px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.topSide {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.topSide > button {
+  height: 26px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 100px;
+}
+.date {
+  background: #fff;
+  color: #252424;
+}
+
+.mode {
+  background: #000;
+  color: #bebebe;
+}
+.container h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #f6f6f6;
+}
+.container p {
+  width: 80%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #898989;
+}
+.container a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #0f61ff;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media screen and (max-width: 1700px) {
+  .container {
+    padding: 22px;
+    padding-bottom: 15px;
+  }
+  .container h1 {
+    font-size: 28px;
+  }
+  .container p {
+    width: 100%;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 1580px) {
+  .topSide > button {
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 22px;
+  }
+  .container h1 {
+    font-size: 26px;
+  }
+  .container p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .topSide {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding-bottom: 25px;
+  }
+  .container h1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .container p {
+    display: none;
+  }
+  .container a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+}

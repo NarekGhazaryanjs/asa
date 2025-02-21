@@ -1,0 +1,204 @@
+.dates {
+  width: 100%;
+  margin-top: 150px;
+}
+.dates > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+.learningContainer {
+  width: 70%;
+  margin: auto;
+  margin-top: 200px;
+}
+.registerInfoCard {
+  margin-top: 200px;
+}
+
+.learningOutcome {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.students {
+  margin-top: 150px;
+}
+.coursesSliderContainer {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+}
+.coursesSliderContainer > p {
+  width: 60%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #898989;
+  margin-top: -10px;
+}
+.footer {
+  margin-top: 150px;
+}
+
+/* blue courseCards */
+
+.courseInfoCard {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  background-position-y: -10px;
+  padding: 150px 100px 50px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.courseInfoCard2 {
+  padding: 100px;
+}
+.courseInfoCard > h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 34px;
+}
+.courseInfoCard > p {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.courseInfoCard > a {
+  width: 475px;
+  min-height: 68px;
+  border-radius: 10px;
+  background: #000;
+  color: white;
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1680px) {
+  .courseInfoCard {
+    gap: 25px;
+  }
+  .courseInfoCard > h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .courseInfoCard > p {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .courseInfoCard > a {
+    width: 320px;
+    min-height: 45px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .dates {
+    margin-top: 80px;
+  }
+  .learningContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .coursesSliderContainer > p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .courseInfoCard {
+    height: 40vh;
+    padding: 100px 40px 50px 40px;
+    gap: 15px;
+  }
+  .courseInfoCard2 {
+    padding: 40px;
+  }
+  .courseInfoCard > h1 {
+    font-size: 30px;
+  }
+  .courseInfoCard > p {
+    font-size: 22px;
+  }
+  .courseInfoCard > a {
+    width: 270px;
+    min-height: 40px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .dates {
+    margin-top: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dates > div {
+    flex-direction: column;
+    gap: 70px;
+  }
+  .learningOutcome {
+    margin-top: 100px;
+  }
+  .learningContainer {
+    margin-top: 50px;
+  }
+  .coursesSliderContainer {
+    margin-top: 70px;
+  }
+  .coursesSliderContainer > p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .footer {
+    margin-top: 100px;
+  }
+  .courseInfoCard {
+    height: 60vh;
+    background-position: center center;
+    padding: 10px 0 0 7.5%;
+    gap: 35px;
+    box-shadow: inset 50vw 0px 180px #000;
+    border-radius: 0 0 20px 20px;
+  }
+  .courseInfoCard > h1 {
+    width: 90%;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .courseInfoCard > p {
+    width: 90%;
+    font-size: 24px;
+    line-height: 32spx;
+  }
+  .courseInfoCard > a {
+    width: 90%;
+    background: #fff;
+    color: #000;
+    font-family: Arial;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .learningContainer {
+    width: 98%;
+  }
+}

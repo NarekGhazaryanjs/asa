@@ -1,0 +1,222 @@
+.container {
+  width: 70.6%;
+  height: 574px;
+  margin-top: 200px;
+  margin-left: 15%;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  -webkit-box-shadow: 0px 0px 8px 0px #0319e380;
+  -moz-box-shadow: 0px 0px 8px 0px #0319e380;
+  box-shadow: 0px 0px 8px 0px #0319e380;
+}
+
+.container h2 {
+  font-family: Arial;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: center;
+}
+.container p {
+  font-family: Arial;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #0319e3;
+  text-align: center;
+}
+
+.register {
+  margin-top: 2%;
+  width: 62%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.register input:nth-child(3),
+.register button {
+  margin-top: 4%;
+}
+
+.register input,
+.register button {
+  width: 48%;
+  height: 73px;
+  border-radius: 15px;
+}
+
+.register button {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34px;
+  border: none;
+}
+.register input {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  padding-left: 4%;
+  border: 1px solid black;
+  outline: none;
+}
+
+.register input::placeholder {
+  color: #000000;
+}
+
+/* ------------------------------------------ */
+
+.checkBoxContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+.checkBoxContainer .checkBox {
+  width: 17%;
+}
+.checkBoxContainer p {
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+}
+.checkBoxTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+@media screen and (max-width: 1600px) {
+  .container {
+    height: 450px;
+  }
+  .container h2 {
+    font-size: 44px;
+  }
+
+  .register {
+    width: 60%;
+  }
+
+  .register button {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  .container {
+    height: 470px;
+  }
+  .register {
+    width: 65%;
+  }
+  .register input,
+  .register button {
+    height: 65px;
+    border-radius: 13px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    height: 400px;
+  }
+  .container h2 {
+    font-size: 38px;
+  }
+  .container p {
+    font-size: 30px;
+  }
+  .register {
+    width: 70%;
+  }
+  .register input,
+  .register button {
+    height: 60px;
+  }
+
+  .checkBoxContainer {
+    gap: 30px;
+  }
+
+  .checkBoxTextContainer {
+    gap: 5px;
+  }
+  .checkBoxTextContainer p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .container h2 {
+    font-size: 32px;
+  }
+  .container p {
+    font-size: 27px;
+  }
+  .register {
+    width: 70%;
+  }
+  .register input,
+  .register button {
+    height: 56px;
+  }
+
+  .register button {
+    font-size: 12px;
+  }
+  .register input {
+    font-size: 14px;
+  }
+
+  .checkBoxTextContainer p {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container h2 {
+    font-size: 23px;
+  }
+  .container p {
+    font-size: 20px;
+  }
+  .register {
+    width: 90%;
+  }
+  .register input,
+  .register button {
+    height: 40px;
+    border-radius: 10px;
+  }
+  .register button {
+    font-size: 7px;
+  }
+  .register input {
+    font-size: 10px;
+  }
+  .checkBoxContainer {
+    gap: 15px;
+  }
+  .checkBoxTextContainer {
+    gap: 0;
+    width: 70%;
+  }
+  .checkBoxTextContainer p {
+    font-size: 14px;
+  }
+}

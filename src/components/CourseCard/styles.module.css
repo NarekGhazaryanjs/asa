@@ -1,0 +1,435 @@
+.container {
+  height: 480px;
+  border: solid #525252 1px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  overflow: hidden;
+}
+.container * {
+  transition: 500ms;
+}
+.textCont h2 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 44px;
+}
+.textCont p {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6d6d6d;
+}
+
+.childContainer {
+  max-width: 85%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.textCont {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: start;
+  position: relative;
+  top: -10px;
+  z-index: 3;
+}
+.textCont a {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+/* children styles */
+
+.uiuxCont {
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+.uiuxCont > * {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+}
+
+.infoImg {
+  z-index: 1;
+}
+
+.infoImg2 {
+  z-index: 2;
+  margin-left: 25%;
+}
+
+.infoImg3 {
+  z-index: 3;
+  margin-left: 50%;
+}
+
+.frontEndCont {
+  max-width: 100%;
+  margin-top: 10%;
+  height: 60%;
+  position: relative;
+  display: flex;
+}
+.frontEndCont > * {
+  position: absolute;
+}
+
+.frontEndImg {
+  margin-top: 10%;
+  width: 60%;
+  z-index: 2;
+}
+
+.frontEndImg2 {
+  margin-left: 55%;
+  margin-top: 25%;
+  width: 40%;
+}
+
+.frontEndImg3 {
+  width: 20%;
+  margin-left: 75%;
+  margin-top: 0%;
+}
+
+.frontEndCont2 {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.frontEndCont2 > * {
+  position: absolute;
+  bottom: 0;
+}
+.frontEnd2Img {
+  width: 50%;
+  margin-left: 5%;
+  z-index: 1;
+}
+
+.frontEnd2Img2 {
+  width: 40%;
+  margin-left: 30%;
+  bottom: -15px;
+  z-index: 2;
+}
+.frontEnd2Img3 {
+  width: 50%;
+  margin-left: 48%;
+  z-index: 1;
+}
+
+.fullStackCont {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+.fullStackCont > * {
+  position: absolute;
+}
+
+.fullStackImg {
+  width: 15%;
+  bottom: 0;
+  z-index: 2;
+  margin-left: 16%;
+}
+.fullStackImg2 {
+  width: 65%;
+  bottom: -5px;
+  z-index: 1;
+  margin-left: 20%;
+}
+.fullStackImg3 {
+  width: 22%;
+  z-index: 2;
+  margin-left: 71%;
+  bottom: 60%;
+}
+
+.pythonCont {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.pythonCont > * {
+  position: absolute;
+}
+
+.pythonImg {
+  width: 33%;
+  margin-left: 30%;
+  bottom: 15%;
+}
+
+.pythonImg2 {
+  width: 33%;
+  margin-left: 53%;
+  bottom: 0;
+}
+
+.scratchCont {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+.scratchImg {
+  width: 80%;
+  margin-left: 10%;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+.smmCont {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.smmCont > * {
+  position: absolute;
+  z-index: 2;
+}
+.smmImg {
+  width: 50%;
+  margin-left: 11.5%;
+  margin-top: -8%;
+}
+.smmImg2 {
+  width: 35%;
+  margin-left: 48%;
+  margin-top: 4%;
+}
+
+.shadow {
+  position: absolute;
+}
+
+/* shadows */
+.uiux > .shadow {
+  width: 300px;
+  height: 300px;
+  background: #0319e3;
+  left: -150px;
+  bottom: -150px;
+  filter: blur(100px);
+}
+.frontEnd > .shadow {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(#2d0402, #2d0402, #0319e370);
+  border-radius: 100%;
+  top: -70px;
+  right: -100px;
+  filter: blur(40px);
+}
+.frontEnd2 > .shadow {
+  width: 100%;
+  height: 20px;
+  background: #0319e3;
+  filter: blur(40px);
+}
+.fullStack > .shadow {
+  width: 150px;
+  height: 150px;
+  background: #0319e3;
+  right: -75px;
+  top: -60px;
+  filter: blur(70px);
+}
+.python > .shadow {
+  width: 240px;
+  height: 240px;
+  background: #0319e3;
+  left: -120px;
+  bottom: -120px;
+  filter: blur(80px);
+}
+
+.scratch > .shadow {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(#2d0402, #2d0402, #0319e370);
+  top: -70px;
+  right: -100px;
+  border-radius: 100%;
+  filter: blur(40px);
+}
+.smm > .shadow {
+  width: 70%;
+  height: 40px;
+  background: linear-gradient(to right, #0319e345, #0319e3, #0319e345);
+  border-radius: 100% 100% 0 0;
+  bottom: -20px;
+  filter: blur(10px);
+}
+
+/* hovers */
+
+.uiux:hover .infoImg {
+  margin-left: -5%;
+}
+.uiux:hover .infoImg3 {
+  margin-left: 55%;
+}
+.uiux:hover > .shadow {
+  filter: blur(120px);
+  transform: scale(1.6);
+}
+.python:hover .pythonImg {
+  margin-left: 37%;
+  bottom: 12%;
+}
+.python:hover > .shadow {
+  transform: scale(1.5);
+  filter: blur(100px);
+}
+.smm:hover > .shadow {
+  width: 90%;
+  height: 50px;
+  filter: blur(20px);
+}
+.smm:hover .smmImg {
+  margin-left: 14%;
+}
+.smm:hover .smmImg2 {
+  margin-left: 45%;
+}
+.scratch:hover .scratchImg {
+  transform: scale(0.85);
+}
+
+.frontEnd:hover .frontEndImg {
+  margin-left: 7.5%;
+}
+.frontEnd:hover .frontEndImg2 {
+  margin-left: 47.5%;
+}
+.frontEnd:hover .frontEndImg3 {
+  transform: scale(1.5);
+  filter: blur(1.4px);
+}
+.frontEnd:hover > .shadow {
+  width: 400px;
+  height: 400px;
+  top: -170px;
+  transform: rotate(30deg);
+  right: -150px;
+  filter: blur(80px);
+}
+/* change to graphic*/
+.frontEnd2:hover .frontEnd2Img {
+  bottom: 10%;
+  margin-left: -5%;
+}
+.frontEnd2:hover .frontEnd2Img2 {
+  bottom: 5%;
+}
+.frontEnd2:hover .frontEnd2Img3 {
+  bottom: 10%;
+  margin-left: 55%;
+}
+.frontEnd2:hover > .shadow {
+  height: 60px;
+  filter: blur(70px);
+}
+/* ................... */
+
+.fullStack:hover .fullStackImg {
+  bottom: 8%;
+}
+.fullStack:hover .fullStackImg2 {
+  bottom: 0;
+}
+.fullStack:hover .fullStackImg3 {
+  margin-left: 65%;
+}
+.fullStack:hover > .shadow {
+  width: 200px;
+  height: 200px;
+  filter: blur(100px);
+}
+@media screen and (min-width: 1790px) and (max-width: 2600px) {
+  .container {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .container {
+    height: 430px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    height: 370px;
+  }
+  .textCont h2 {
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .textCont p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .textCont a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .container {
+    height: 300px;
+  }
+  .textCont h2 {
+    font-size: 18px;
+  }
+  .textCont p {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .textCont a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100% !important;
+    height: 310px;
+  }
+  .textCont h2 {
+    font-size: 24px;
+  }
+  .textCont p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .textCont a {
+    font-size: 16px;
+  }
+
+  .scratchImg {
+    width: 70%;
+  }
+}

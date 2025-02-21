@@ -1,0 +1,127 @@
+.container {
+  width: 380px;
+  height: 290px;
+  border-radius: 17px;
+  background: #000000d4;
+  position: absolute;
+  margin-left: -100px;
+  top: 80px;
+  border: solid 0.5px #656565;
+  box-shadow: 0px 0px 15px #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 35px;
+  padding-right: 10px;
+  opacity: 0;
+  transform: translateX(-150px);
+  animation: fadeIn 300ms 1 forwards;
+}
+.container > a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.container div {
+  width: 70px;
+  height: 70px;
+  background: gray;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container img {
+  margin: 0 !important;
+}
+.container p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #a4a4a4;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .container {
+    width: 300px;
+    height: 200px;
+    margin-left: -85px;
+  }
+  .container > a > div {
+    width: 40px;
+    height: 40px;
+  }
+  .container img {
+    width: 35px;
+  }
+  .container p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    width: 220px;
+    height: 170px;
+    top: 60px;
+    padding-left: 20px;
+    padding-right: 5px;
+    margin-left: -50px;
+    justify-content: space-evenly;
+  }
+  .container > a > div {
+    min-width: 30px;
+    max-width: 30px;
+    height: 30px;
+  }
+  .container img {
+    width: 25px;
+  }
+  .container p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .container {
+    width: 260px;
+    position: relative;
+    margin-left: 20px;
+    top: 10px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 20px;
+  }
+  .container > a > div {
+    min-width: 46px;
+    max-width: 46px;
+    height: 46px;
+  }
+  .container img {
+    width: 40px;
+  }
+  .container p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .container {
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+  .container p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
