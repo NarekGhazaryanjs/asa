@@ -1,53 +1,123 @@
 .team-card {
-    background-color: #000000bf;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 15px;
-    transition: transform 0.3s ease;
-    width: 300px;
-  }
-  
-  .team-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.image-container {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.member-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover .member-image {
+  transform: scale(1.1);
+}
+
+.member-name {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.member-role {
+  color: #3498db;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.member-bio {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.member-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.skill-tag {
+  background: rgba(52, 152, 219, 0.2);
+  color: #3498db;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-link {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: #3498db;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
   .image-container {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid #3498db;
-    margin-bottom: 15px;
   }
-  
-  .member-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+  .card-content {
+    padding: 1.5rem;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    width: 120px;
+    height: 120px;
+  }
+
   .member-name {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    margin: 10px 0;
+    font-size: 1.25rem;
   }
-  
-  .member-role {
-    font-size: 18px;
-    color: white;
-    margin-bottom: 10px;
-  }
-  
-  .member-bio {
-    color: white;
-    line-height: 1.5;
-  }
+}
