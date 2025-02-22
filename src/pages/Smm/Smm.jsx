@@ -53,7 +53,7 @@ const SMM = () => {
 
     return (
         <div className="smm-container">
-            <section className="hero-section">
+            <section className="hero-section-boxes">
                 <h1>SMM Ծառայություններ</h1>
                 <p className="hero-text">
                     Մենք օգնում ենք ձեր բիզնեսին աճել սոցիալական մեդիայում՝ 

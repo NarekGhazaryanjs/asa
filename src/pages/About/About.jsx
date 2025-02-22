@@ -1,57 +1,110 @@
 import React from 'react';
-import { FaRegLightbulb, FaHandshake, FaRecycle, FaUsers } from 'react-icons/fa';
+import { 
+  FaRegLightbulb, 
+  FaHandshake, 
+  FaRecycle, 
+  FaUsers, 
+  FaRocket, 
+  FaChartLine 
+} from 'react-icons/fa';
 import './About.css';
 
 const AboutPage = () => {
   return (
     <div className="about-page">
-      <section className="about-header">
-        <h1>Our Vision</h1>
-        <p>We are committed to revolutionizing the industry with innovative solutions. Join us as we pave the way for a brighter future.</p>
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="hero-content">
+          <h1 className="animate-fade-in">Մեր տեսլականը</h1>
+          <p className="animate-fade-in-delay">
+            Մենք նվիրված ենք ոլորտը հեղափոխելու նորարարական լուծումներով: 
+            Միացեք մեզ, մինչ մենք ճանապարհ ենք հարթում դեպի ավելի պայծառ ապագա:
+          </p>
+        </div>
       </section>
 
-      <div className="about-section">
-        <div className="about-story">
-          <h2>Our Story</h2>
-          <p>Founded with the purpose of combining technology with social responsibility, we’ve created a platform to inspire change. Our founders, driven by a shared passion, have united their skills to build something that matters. Together, we aim to break barriers and reshape industries for good.</p>
+      {/* Stats Section */}
+      <section className="stats-section">
+        <div className="stat-item">
+          <FaRocket className="stat-icon" />
+          <div className="stat-number">100+</div>
+          <div className="stat-label">Հաջողված ծրագրեր</div>
+        </div>
+        <div className="stat-item">
+          <FaUsers className="stat-icon" />
+          <div className="stat-number">1000+</div>
+          <div className="stat-label">Գոհ հաճախորդներ</div>
+        </div>
+        <div className="stat-item">
+          <FaChartLine className="stat-icon" />
+          <div className="stat-number">95%</div>
+          <div className="stat-label">Աճի տեմպ</div>
+        </div>
+      </section>
+
+      {/* About Sections */}
+      <div className="about-sections">
+        <div className="about-section story">
+          <div className="section-content">
+            <h2>Մեր պատմությունը</h2>
+            <p>
+              Հիմնադրված տեխնոլոգիաները սոցիալական պատասխանատվության հետ համատեղելու 
+              նպատակով, մենք ստեղծել ենք մի հարթակ՝ փոփոխություններ ոգեշնչելու համար: 
+              Մեր հիմնադիրները, առաջնորդվելով ընդհանուր կրքով, միավորել են իրենց 
+              հմտությունները՝ կառուցելու մի բան, որն իսկապես նշանակություն ունի:
+            </p>
+          </div>
         </div>
 
-        <div className="about-mission">
-          <h2>Our Mission</h2>
-          <p>We aim to create a world where innovation meets impact. Our mission is to build sustainable solutions that enhance lives, foster growth, and drive lasting change. Through our work, we strive to inspire future generations to think creatively and act responsibly.</p>
+        <div className="about-section mission">
+          <div className="section-content">
+            <h2>Մեր առաքելությունը</h2>
+            <p>
+              Մենք ձգտում ենք ստեղծել մի աշխարհ, որտեղ նորարարությունը հանդիպում է 
+              ազդեցությանը: Մեր առաքելությունն է կառուցել կայուն լուծումներ, որոնք 
+              բարելավում են կյանքը, խթանում աճը և առաջացնում տևական փոփոխություններ:
+            </p>
+          </div>
         </div>
       </div>
 
+      {/* Values Section */}
       <div className="values-container">
-        <h2>Our Core Values</h2>
+        <h2>Մեր հիմնական արժեքները</h2>
         <div className="values-grid">
           <div className="value-card">
-            <FaRegLightbulb size={40} color="#3498db" />
-            <h3>Innovation</h3>
-            <p>We embrace new ideas and challenges, constantly evolving to create groundbreaking solutions.</p>
+            <FaRegLightbulb className="value-icon" />
+            <h3>Նորարարություն</h3>
+            <p>Մենք ընդունում ենք նոր գաղափարներ և մարտահրավերներ՝ մշտապես զարգանալով:</p>
           </div>
           <div className="value-card">
-            <FaHandshake size={40} color="#3498db" />
-            <h3>Collaboration</h3>
-            <p>We believe in the power of teamwork and partnerships to achieve mutual success and growth.</p>
+            <FaHandshake className="value-icon" />
+            <h3>Համագործակցություն</h3>
+            <p>Մենք հավատում ենք թիմային աշխատանքի և գործընկերության ուժին:</p>
           </div>
           <div className="value-card">
-            <FaRecycle size={40} color="#3498db" />
-            <h3>Sustainability</h3>
-            <p>We prioritize long-term environmental and social impacts in everything we do.</p>
+            <FaRecycle className="value-icon" />
+            <h3>Կայունություն</h3>
+            <p>Մենք առաջնահերթություն ենք տալիս երկարաժամկետ ազդեցություններին:</p>
           </div>
           <div className="value-card">
-            <FaUsers size={40} color="#3498db" />
-            <h3>Community</h3>
-            <p>We put people first, building strong communities that thrive through cooperation and mutual respect.</p>
+            <FaUsers className="value-icon" />
+            <h3>Համայնք</h3>
+            <p>Մենք առաջնահերթություն ենք տալիս մարդկանց, կառուցում ենք ուժեղ համայնքներ:</p>
           </div>
         </div>
       </div>
 
+      {/* Contact Section */}
       <div className="contact-container">
-        <h2>Contact Us</h2>
-        <p>Have questions or want to join the movement? Reach out to us and let’s work together for a better future.</p>
-        <button className="contact-button">Get In Touch</button>
+        <div className="contact-content">
+          <h2>Կապ մեզ հետ</h2>
+          <p>
+            Հարցե՞ր ունեք կամ ցանկանում եք միանալ շարժմանը: 
+            Կապվեք մեզ հետ և եկեք միասին աշխատենք ավելի լավ ապագայի համար:
+          </p>
+          <button className="contact-button">Կապվել մեզ հետ</button>
+        </div>
       </div>
     </div>
   );

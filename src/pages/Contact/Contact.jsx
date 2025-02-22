@@ -43,7 +43,7 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      <div className="hero-section">
+      <div className="hero-section-box">
         <div className="hero-overlay" />
         <div className="hero-content">
           <h1 className="hero-title">Կապ մեզ հետ</h1>
