@@ -92,8 +92,8 @@ const TeamPage = () => {
     ];
 
     const stats = [
-        { number: "10+", label: "Տարիների փորձ" },
-        { number: "50+", label: "Հաջողված նախագծեր" },
+        { number: "2+", label: "Տարիներ Շուկայում" },
+        { number: "2", label: "Հրատարակված գրքեր" },
         { number: "100%", label: "Գոհ հաճախորդներ" }
     ];
 

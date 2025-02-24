@@ -17,6 +17,7 @@
   background-position: center;
   position: relative;
   color: white;
+  mask-border: 20px;
 }
 
 .hero-overlay {
@@ -76,10 +77,11 @@
 /* Contact Section */
 .contact-section {
   max-width: 1200px;
-  margin: -60px auto 0;
+  margin:  50px auto;
   padding: 0 2rem;
   position: relative;
   z-index: 2;
+
 }
 
 .contact-info-cards {

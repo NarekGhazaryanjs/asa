@@ -52,17 +52,18 @@ const Contact = () => {
           </p>
           <div className="hero-stats">
             <div className="stat-item">
-              <span className="stat-number">1000+</span>
-              <span className="stat-label">Գոհ հաճախորդներ</span>
+              <span className="stat-number">200+</span>
+              <span className="stat-label">Ավարտած ուսանողներ</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-number">10+</span>
+              <span className="stat-label">Գործընկերներ</span>
             </div>
             <div className="stat-item">
               <span className="stat-number">24/7</span>
               <span className="stat-label">Աջակցություն</span>
             </div>
-            <div className="stat-item">
-              <span className="stat-number">100%</span>
-              <span className="stat-label">Բավարարվածություն</span>
-            </div>
+           
           </div>
         </div>
       </div>

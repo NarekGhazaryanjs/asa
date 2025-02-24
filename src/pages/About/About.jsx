@@ -27,17 +27,17 @@ const AboutPage = () => {
       <section className="stats-section">
         <div className="stat-item">
           <FaRocket className="stat-icon" />
-          <div className="stat-number">100+</div>
+          <div className="stat-number">30+</div>
           <div className="stat-label">Հաջողված ծրագրեր</div>
         </div>
         <div className="stat-item">
           <FaUsers className="stat-icon" />
-          <div className="stat-number">1000+</div>
-          <div className="stat-label">Գոհ հաճախորդներ</div>
+          <div className="stat-number">60+</div>
+          <div className="stat-label">աշխատող ուսանողներ</div>
         </div>
         <div className="stat-item">
           <FaChartLine className="stat-icon" />
-          <div className="stat-number">95%</div>
+          <div className="stat-number">82%</div>
           <div className="stat-label">Աճի տեմպ</div>
         </div>
       </section>
